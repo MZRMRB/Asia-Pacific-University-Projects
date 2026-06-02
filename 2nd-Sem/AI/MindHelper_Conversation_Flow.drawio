@@ -1,0 +1,182 @@
+<mxfile host="app.diagrams.net" modified="2026-05-26" agent="Claude" version="21.0.0">
+  <diagram name="MindHelper Conversation Flow" id="mindhelper-flow">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- TITLE -->
+        <mxCell id="title" value="MindHelper — Conversation Flow Diagram" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="200" y="20" width="769" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- START -->
+        <mxCell id="start" value="User Sends a Message" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1e3a5f;strokeColor=#1e3a5f;fontColor=#ffffff;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="434" y="80" width="200" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- IS FIRST MESSAGE? -->
+        <mxCell id="q1" value="First message / Greeting?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#2D9CDB;strokeColor=#2D9CDB;fontColor=#ffffff;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="409" y="180" width="250" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- GREET USER -->
+        <mxCell id="greet" value="Greet user by name&#xa;Offer Mood Check-In&#xa;List available features" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#27ae60;strokeColor=#27ae60;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="680" y="185" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- MOOD GIVEN? -->
+        <mxCell id="q2" value="User provides&#xa;mood score / description?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#2D9CDB;strokeColor=#2D9CDB;fontColor=#ffffff;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="655" y="295" width="250" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- SCORE LOW -->
+        <mxCell id="low" value="Score 1–3 / Distressed&#xa;―――――――――&#xa;• Empathetic response&#xa;• Breathing exercise&#xa;• Befrienders: 03-7627 2929&#xa;• Mental health disclaimer&#xa;• Offer counsellor referral" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e74c3c;strokeColor=#c0392b;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="880" y="200" width="220" height="130" as="geometry" />
+        </mxCell>
+
+        <!-- SCORE MID -->
+        <mxCell id="mid" value="Score 4–6 / Stressed&#xa;―――――――――&#xa;• Acknowledge feeling&#xa;• Stress relief technique&#xa;• Offer study plan&#xa;• Suggest short break" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e67e22;strokeColor=#d35400;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="880" y="350" width="220" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- SCORE HIGH -->
+        <mxCell id="high" value="Score 7–10 / Good&#xa;―――――――――&#xa;• Celebrate positive mood&#xa;• Offer productivity tip&#xa;• Suggest study plan&#xa;• Advanced technique" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#27ae60;strokeColor=#1e8449;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="880" y="480" width="220" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- INTENT DETECTION -->
+        <mxCell id="intent" value="RAG Intent Detection&#xa;(Semantic Search on Knowledge Base)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8e44ad;strokeColor=#6c3483;fontColor=#ffffff;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="409" y="310" width="220" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- MODULE 1: STUDY TECHNIQUES -->
+        <mxCell id="mod1" value="📚 Study Techniques&#xa;―――――――――&#xa;• Pomodoro Technique&#xa;• Active Recall&#xa;• Spaced Repetition&#xa;• Feynman Technique&#xa;• Cornell Notes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2980b9;strokeColor=#1a5276;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="430" width="180" height="130" as="geometry" />
+        </mxCell>
+
+        <!-- MODULE 2: STUDY PLANNER -->
+        <mxCell id="mod2" value="🗓️ Daily Study Planner&#xa;―――――――――&#xa;• Ask hours + subjects&#xa;• Generate Pomodoro blocks&#xa;• Include break times&#xa;• Add buffer time&#xa;• Personalised output" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2980b9;strokeColor=#1a5276;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="240" y="430" width="180" height="130" as="geometry" />
+        </mxCell>
+
+        <!-- MODULE 3: STRESS / MENTAL HEALTH -->
+        <mxCell id="mod3" value="😮‍💨 Stress &amp; Mental Health&#xa;―――――――――&#xa;• Box / 4-7-8 Breathing&#xa;• 5-4-3-2-1 Grounding&#xa;• Burnout recovery&#xa;• Sleep hygiene&#xa;• Safety disclaimer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#16a085;strokeColor=#0e6655;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="440" y="430" width="185" height="130" as="geometry" />
+        </mxCell>
+
+        <!-- MODULE 4: ASSIGNMENT HELP -->
+        <mxCell id="mod4" value="💡 Assignment Help&#xa;―――――――――&#xa;• Break down task&#xa;• 2-minute start rule&#xa;• PEEL essay structure&#xa;• Deadline prioritisation&#xa;• APA referencing tips" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d35400;strokeColor=#a04000;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="645" y="430" width="185" height="130" as="geometry" />
+        </mxCell>
+
+        <!-- MODULE 5: HABIT TRACKER -->
+        <mxCell id="mod5" value="✅ Habit Tracker&#xa;―――――――――&#xa;• Habit stacking formula&#xa;• Implementation intentions&#xa;• 66-day research insight&#xa;• Daily habit checklist&#xa;• Streak encouragement" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7f8c8d;strokeColor=#566573;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="850" y="430" width="185" height="130" as="geometry" />
+        </mxCell>
+
+        <!-- LOG TO DATABASE -->
+        <mxCell id="db" value="Log to Database&#xa;MoodLogTable / HabitLogTable&#xa;(Update User State Frame)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#34495e;strokeColor=#2c3e50;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="409" y="610" width="250" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- FOLLOW UP -->
+        <mxCell id="followup" value="End with Follow-Up&#xa;Offer next step or ask a clarifying question" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1e3a5f;strokeColor=#1e3a5f;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="409" y="720" width="250" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- KNOWLEDGE BASE BOX -->
+        <mxCell id="kb" value="Knowledge Base (RAG)&#xa;7 Documents • ~15,000 words&#xa;study-techniques | stress-relief&#xa;mental-health | productivity&#xa;habit-tracker | assignment-help | faq" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#8e44ad;fontColor=#6c3483;fontSize=10;fontStyle=2;dashed=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="300" width="340" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- ARROWS -->
+
+        <!-- Start → Q1 -->
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#1e3a5f;strokeWidth=2;" edge="1" source="start" target="q1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Q1 YES → Greet -->
+        <mxCell id="e2" value="YES" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeColor=#27ae60;strokeWidth=2;fontStyle=1;fontSize=11;" edge="1" source="q1" target="greet" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Greet → Q2 -->
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#27ae60;strokeWidth=2;" edge="1" source="greet" target="q2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Q2 → LOW -->
+        <mxCell id="e4" value="1–3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.25;entryX=0;entryY=0.5;strokeColor=#e74c3c;strokeWidth=2;fontStyle=1;fontSize=11;" edge="1" source="q2" target="low" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Q2 → MID -->
+        <mxCell id="e5" value="4–6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeColor=#e67e22;strokeWidth=2;fontStyle=1;fontSize=11;" edge="1" source="q2" target="mid" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Q2 → HIGH -->
+        <mxCell id="e6" value="7–10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.75;entryX=0;entryY=0.5;strokeColor=#27ae60;strokeWidth=2;fontStyle=1;fontSize=11;" edge="1" source="q2" target="high" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Q1 NO → Intent -->
+        <mxCell id="e7" value="NO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#8e44ad;strokeWidth=2;fontStyle=1;fontSize=11;" edge="1" source="q1" target="intent" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- KB → Intent (dashed) -->
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeColor=#8e44ad;strokeWidth=2;dashed=1;" edge="1" source="kb" target="intent" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Intent → MOD1 -->
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.1;exitY=1;entryX=0.5;entryY=0;strokeColor=#2980b9;strokeWidth=2;" edge="1" source="intent" target="mod1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Intent → MOD2 -->
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.3;exitY=1;entryX=0.5;entryY=0;strokeColor=#2980b9;strokeWidth=2;" edge="1" source="intent" target="mod2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Intent → MOD3 -->
+        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#16a085;strokeWidth=2;" edge="1" source="intent" target="mod3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Intent → MOD4 -->
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.7;exitY=1;entryX=0.5;entryY=0;strokeColor=#d35400;strokeWidth=2;" edge="1" source="intent" target="mod4" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Intent → MOD5 -->
+        <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.9;exitY=1;entryX=0.5;entryY=0;strokeColor=#7f8c8d;strokeWidth=2;" edge="1" source="intent" target="mod5" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Modules → DB -->
+        <mxCell id="e14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;entryX=0.2;entryY=0;strokeColor=#34495e;strokeWidth=2;" edge="1" source="mod2" target="db" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#34495e;strokeWidth=2;" edge="1" source="mod3" target="db" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Low → DB -->
+        <mxCell id="e16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0;exitY=1;entryX=0.8;entryY=0;strokeColor=#34495e;strokeWidth=2;" edge="1" source="low" target="db" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- DB → Followup -->
+        <mxCell id="e17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#1e3a5f;strokeWidth=2;" edge="1" source="db" target="followup" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

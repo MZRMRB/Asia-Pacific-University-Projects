@@ -1,0 +1,17 @@
+{
+  "name": "ai_assignment",
+  "version": "1.0.0",
+  "description": "A RAG-powered knowledge assistant built with Botpress ADK",
+  "type": "module",
+  "scripts": {
+    "dev": "adk dev",
+    "build": "adk build",
+    "deploy": "adk deploy"
+  },
+  "dependencies": {
+    "@botpress/runtime": "^1.18.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
